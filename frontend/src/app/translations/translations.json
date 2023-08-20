@@ -1,0 +1,20 @@
+{
+  "en": {
+    "nickname": "Nickname",
+    "readyToPlay": "Ready to play",
+    "game": "Game",
+    "disconnect": "Disconnect"
+  },
+  "kz": {
+    "nickname": "Никнейм",
+    "readyToPlay": "Ойынға дайынмын",
+    "game": "Ойын",
+    "disconnect": "Ойыннан шығу"
+  },
+  "ru": {
+    "nickname": "Никнейм",
+    "readyToPlay": "Готов к игре",
+    "game": "Игра",
+    "disconnect": "Выйти из игры"
+  }
+}

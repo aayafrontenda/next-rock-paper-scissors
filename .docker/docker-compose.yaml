@@ -1,0 +1,33 @@
+services:
+  frontend:
+    build:
+      context: frontend
+      target: dev-envs
+    ports:
+      - 3000:3000
+    stdin_open: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+    networks:
+      - react-express
+    depends_on:
+      - backend
+
+  backend:
+    restart: always
+    ports:
+      - 3001:3001
+    stdin_open: true
+    build:
+      context: backend
+      target: dev-envs
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - express-mongo
+      - react-express
+
+networks:
+  react-express:
+  express-mongo:
